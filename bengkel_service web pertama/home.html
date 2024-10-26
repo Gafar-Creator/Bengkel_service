@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-... (integrity)" crossorigin="anonymous" />
+
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('images/vn.jpg');
+        }
+
+        header {
+            background-color: rgba(0, 0, 255, 0.116);
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            gap: 10px;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.445);
+        }
+
+        .service-info {
+            background-color:rgba(0, 0, 0, 0.336); /* Latar belakang transparan */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0, 0, 0) ;
+            margin-bottom: 20px;
+            width: 30%;
+            text-align: left;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .service-info:hover {
+            animation: bounceIn 0.5s ease-in-out;
+        }
+        .service-info h2 {
+            color: white;
+            display: flex;
+            align-items: center;
+          
+        }
+        
+        .service-info p,
+        .service-info li {
+            color: white;
+            margin-top: 10px;
+           
+        }
+
+        .service-info li {
+            display: flex;
+            color:white;
+            align-items: center;
+        }
+
+        .service-info h2 i {
+            margin-left: 5px; /* Sesuaikan jarak antara teks dan ikon */
+            font-size: 18px; /* Sesuaikan ukuran ikon */
+        }
+
+        footer {
+            background-color:rgba(0, 0, 0, 0.219);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .icon {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .icon:hover {
+            color: blue;
+        }
+
+        .service-info:hover {
+    background-color:rgba(0, 0, 0, 0.664);
+    transition: background-color 0.3s ease-in-out;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Selamat datang di Layanan Mobil</h1>
+    </header>
+
+    <section id="layanan">
+        <div class="service-info">
+            <h2>Komponen Service Mobil <i class="fas fa-car"></i></h2>
+            <p>Ganti Oli dan Filter, cek Aki, Filter Udara dan AC, Bagian Rem, Kampas dan Minyak, Kampas Kopling, Bagian Ban, Lampu Depan dan Belakang, Bagian Kaki-Kaki.</p>
+        </div>
+
+        <div class="service-info">
+            <h2>Kenapa Memilih Kami? <i class="fas fa-check-circle"></i></h2>
+            <p>Bengkel mobil kami menawarkan layanan unggul dengan tim profesional dan berpengalaman untuk memastikan mobil Anda mendapatkan perawatan terbaik.</p>
+            <p>Menawarkan harga yang kompetitif, kami berkomitmen untuk memberikan nilai maksimal untuk uang Anda dengan servis berkualitas tinggi.</p>
+        </div>
+
+        <div class="service-info">
+            <h2>Layanan Kami <i class="fas fa-tools"></i></h2>
+            <p>Kami menyediakan berbagai layanan perawatan dan perbaikan untuk mobil Anda. Dengan teknisi terampil dan fasilitas modern, kami siap melayani kebutuhan mobil Anda.</p>
+        </div>
+
+        <div class="service-info">
+            <h2>Jenis Layanan<i class="fas fa-cogs"></i></h2>
+            <ul>
+                <li>Perawatan Berkala Pengecekan rutin untuk memastikan mobil Anda tetap dalam kondisi optimal</li>
+                <li>Perbaikan Mesin Penanganan berbagai masalah mesin untuk menjaga performa mobil</li>
+                <li>Pengecekan Sistem Kelistrikan Menjamin sistem listrik mobil berfungsi dengan baik</li>
+                <li>Ganti Oli dan Filter Penggantian oli dan filter sesuai jadwal yang direkomendasikan.</li>
+            </ul>
+        </div>
+
+        <div class="service-info">
+            <h2>Pemeliharaan Kendaraan <i class="fas fa-calendar-alt"></i></h2>
+            <p>Jadwal perawatan berkala sudah ditentukan oleh pabrik sehingga untuk jadwal perawatan berkala dapat dilihat pada jadwal perawatan yang ada dalam buku pedoman reparasi kendaraan tersebut. Kendaraan harus dilakukan perawatan berdasarkan jarak yang telah ditempuh kendaraan tersebut atau jangka waktu yang sudah tercapai. Misalnya, apabila jadwal perawatan untuk part (komponen) pada kendaraan tersebut ditentukan oleh pabrik setiap menempuh jarak 30.000 km atau telah mencapai waktu 2 tahun maka perawatan harus dilakukan apabila salah satu kondisi tersebut tercapai (lakukan perawatan secara berkala sesuai dengan jarak tempuh atau waktu capai yang mana tercapai lebih dahulu).</p>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2023 Service Mobil. All rights reserved.
+        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+    </footer>
+</body>
+</html>
+
+<head> 
+    <title>Animasi</title> 
+</head> 
+    <style> 
+        * { box-sizing: border-box; } 
+
+        body { font-family: sans-serif; } 
+
+        .scene { 
+            border: 1px solid #CCC;       
+            margin: 40px 0;                
+            position: relative;                 
+            width: 210px;                 
+            height: 140px;                 
+            margin: 40px auto;                 
+            perspective: 1000px; 
+        } 
+
+        .carousel {                 
+            width: 100%;                 
+            height: 100%;
+            position: absolute;
+            transform: translateZ(-288px);                 
+            transform-style: preserve-3d;                
+            transition: transform 1s; 
+        } 
+
+        .carousel__cell {                 
+            position: absolute;                
+            width: 140px;                 
+            height: 209px;                 
+            left: 10px;                 
+            top: 10px; 
+            border: 2px solid black;                 
+            line-height: 116px;                 
+            font-size: 80px;                 
+            font-weight: bold;                 
+            color: white;                 
+            text-align: center; 
+
+            } 
+
+        .carousel__cell:nth-child(1) {  
+            transform: rotateY(  0deg) translateZ(288px);  
+            } 
+ 
+        .carousel__cell:nth-child(2) {  
+            transform: rotateY( 40deg) translateZ(288px);  
+            } 
+             
+            .carousel__cell:nth-child(3) {  
+                transform: rotateY( 80deg) translateZ(288px);  
+            } 
+             
+            .carousel__cell:nth-child(4) {  
+                transform: rotateY(120deg) translateZ(288px);  
+            } 
+ 
+            .carousel__cell:nth-child(5) {  
+                transform: rotateY(160deg) translateZ(288px);  
+            } 
+ 
+            .carousel__cell:nth-child(6) {  
+                transform: rotateY(200deg) translateZ(288px);  
+            } 
+ 
+            .carousel__cell:nth-child(7) {  
+                transform: rotateY(240deg) translateZ(288px);  
+            } 
+ 
+            .carousel__cell:nth-child(8) {  
+                transform: rotateY(280deg) translateZ(288px);  
+            } 
+            
+            .carousel__cell:nth-child(9){
+                transform:  rotateY(320deg) translateZ(288px);  
+
+            }
+
+
+        </style> 
+        <body> 
+            <header>
+                <h1>Gallery</h1>
+            </header>
+     <div class="scene"> 
+         <div class="carousel"> 
+             <div class="carousel__cell"> 
+                 <img src="images/"> 
+             </div> 
+             <div class="carousel__cell"> 
+                 <img src="images/movie/m-2.jpg"> 
+             </div> 
+             <div class="carousel__cell"> 
+                 <img src="images/movie/m-3.jpg"> 
+             </div> 
+             <div class="carousel__cell"> 
+                 <img src="images/movie/m-4.jpg"> 
+             </div> 
+             <div class="carousel__cell"> 
+                 <img src="images/movie/m-5.jpg"> 
+             </div> 
+             <div class="carousel__cell"> 
+                 <img src="images/movie/m-6.jpg"> 
+             </div> 
+             <div class="carousel__cell"> 
+                 <img src="images/movie/m-7.jpg"> 
+             </div> 
+             <div class="carousel__cell"> 
+                 <img src="images/movie/m-8.jpg"> 
+             </div> 
+             <div class="carousel__cell"> 
+                 <img src="images/movie/m-9.jpg"> 
+             </div> 
+         </div> 
+     </div> 
+     <p style="text-align: center;margin-top: 100px;"> 
+     <button class="previous-button">Previous</button> 
+     <button class="next-button">Next</button> 
+     </p> 
+
+    <script> 
+         var carousel = document.querySelector('.carousel');             
+         var cellCount = 9;             
+         var selectedIndex = 0; 
+
+         function rotateCarousel() { 
+             var angle = selectedIndex / cellCount * -360;                 
+             carousel.style.transform ='translateZ(-288px) rotateY(' + angle + 'deg)';             
+         }
+
+         
+         var prevButton =  
+            document.querySelector('.previous-button');             
+            prevButton.addEventListener( 'click', function() {                 
+                selectedIndex--;                 
+                rotateCarousel(); 
+            }); 
+ 
+            var nextButton = document.querySelector('.next-button');            
+             nextButton.addEventListener( 'click', function() {                
+                 selectedIndex++;                 
+                 rotateCarousel(); 
+            }); 
+        </script> 
+    </body> 
+</html> 
+
+

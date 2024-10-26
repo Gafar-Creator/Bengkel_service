@@ -1,0 +1,159 @@
+<!-- layanan.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: block;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('images/px.jpg'); /* Gantilah 'background-image.jpg' dengan path gambar latar belakang Anda */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+           
+        }
+
+
+        header {
+            background-color:rgba(0, 0, 255, 0.178);
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(48, 39, 39, 0.322);
+            
+        }
+
+        .service-item {
+            background-color:rgba(0, 0, 0, 0.671);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(101, 198, 243) (16, 31, 241, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .service-item:hover {
+            transform: scale(1.1); /* Perbesar elemen saat disentuh */
+            transition: transform 0.3s ease-in-out; /* Efek transisi dengan durasi 0.3 detik */
+}
+
+        .service-item h2 {
+            color:white;
+        }
+
+        .service-item p {
+            color: white;
+        }
+
+        footer {
+            background-color:rgba(137, 43, 226, 0.089);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Layanan Kami</h1>
+    </header>
+
+    <section>
+        <div class="service-item">
+            <h2>Perawatan Berkala</h2>
+            <p>
+                Kami menyediakan layanan perawatan berkala untuk menjaga performa dan keamanan mobil Anda.
+                Dengan teknisi terlatih, kami melakukan pemeriksaan menyeluruh dan perawatan yang diperlukan.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h2>Perbaikan Umum</h2>
+            <p>
+                Apakah mobil Anda mengalami masalah mekanis atau perlu perbaikan umum?
+                Kami memiliki fasilitas perbaikan modern dan teknisi berpengalaman untuk menangani semua jenis perbaikan.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h2>Layanan Darurat</h2>
+            <p>
+                Kami siap memberikan layanan darurat 24/7 untuk membantu Anda dalam situasi darurat.
+                Hubungi kami dan tim teknisi kami akan segera merespons ke lokasi Anda.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h2>Layanan Tune-Up</h2>
+            <p>
+                Kami menawarkan layanan tune-up untuk meningkatkan kinerja dan efisiensi mesin mobil Anda.
+                Tune-up melibatkan pemeriksaan komponen-komponen kunci dan penyesuaian untuk memastikan mobil beroperasi optimal.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h2>Layanan Detailing</h2>
+            <p>
+                Mobil Anda layak mendapatkan perawatan ekstra! Layanan detailing kami mencakup pembersihan eksterior dan interior,
+                pengkilapkan, dan perlindungan cat untuk menjaga tampilan mobil tetap prima.
+            </p>
+        </div>
+      
+        <div class="service-item">
+            <h2>Layanan Penggantian Oli</h2>
+            <p>
+                Rutin mengganti oli penting untuk menjaga performa mesin. Dengan layanan penggantian oli kami,
+                Anda akan mendapatkan penggantian oli berkualitas tinggi dan pemeriksaan tambahan untuk menjaga kelancaran mesin.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <h2>Layanan Kelistrikan</h2>
+            <p>
+                Spesialis kelistrikan kami siap membantu Anda dengan segala permasalahan listrik mobil.
+                Layanan ini mencakup pengecekan dan perbaikan sistem listrik, mulai dari sistem pengisian hingga kelistrikan interior.
+            </p>
+        </div>
+        
+        <div class="service-item">
+            <h2>Layanan Pengecekan Kaki-Kaki</h2>
+            <p>
+                Pastikan kendaraan Anda aman dan nyaman dengan layanan pengecekan kaki-kaki berkala.
+                Tim profesional kami akan memeriksa sistem suspensi, rem, dan kemudi untuk menjaga stabilitas dan keamanan mobil Anda.
+            </p>
+        </div>
+        <div class="service-item">
+            <h2>Layanan Pemeliharaan AC</h2>
+            <p>
+                Pastikan kenyamanan perjalanan Anda dengan layanan pemeliharaan AC.
+                Kami akan membersihkan, memeriksa, dan mengisi ulang refrigeran AC untuk memastikan AC mobil Anda berfungsi optimal.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; 2023 Service Mobil. All rights reserved.
+    </footer>
+</body>
+</html>
+

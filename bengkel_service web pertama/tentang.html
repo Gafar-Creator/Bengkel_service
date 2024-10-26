@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <title>Tentang Kami</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+            color: white;
+            background-image: url(images/te.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(59, 144, 165, 0);
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            text-align: center;
+            gap: 10px;
+            background-color: rgba(0, 0, 0, 0.411);
+        }
+
+        .about-info,
+        .kewajiban-info {
+            background-color: rgba(0, 0, 0, 0.589);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            flex: 1;
+            margin: 10px;
+            text-align: left;
+        }
+
+        .about-info h2,
+        .kewajiban-info h2,
+        .about-info p,
+        .kewajiban-info p {
+            color: white;
+        }
+
+        .kewajiban-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .kewajiban-info,
+        .about-info {
+            transition: opacity 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .kewajiban-info:hover,
+        .about-info:hover {
+            opacity: 0.8;
+        }
+
+        .kewajiban-info {
+            background-color: rgba(0, 0, 0, 0.753);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(56, 75, 250, 0.315);
+            margin-bottom: 20px;
+            width: 90%;
+            text-align: left;
+        }
+
+        .kewajiban-info h2,
+        .kewajiban-info p {
+            font-size: medium;
+            color: white;
+        }
+
+        footer {
+            background-color: #33333300;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tentang Kami</h1>
+    </header>
+
+    <section id="tentang">
+        <div class="about-info">
+            <h2>Visi</h2>
+            <p>
+                Menjadi penyedia layanan perawatan dan perbaikan mobil terkemuka dengan komitmen tinggi terhadap kualitas dan kepuasan pelanggan.
+            </p>
+        </div>
+
+        <div class="about-info">
+            <h2>Misi</h2>
+            <p>
+                Menyediakan layanan berkualitas tinggi untuk menjaga dan memperbaiki mobil pelanggan. Mengutamakan keamanan dan kepuasan pelanggan. Terus meningkatkan pengetahuan dan keterampilan teknisi.
+            </p>
+        </div>
+
+        <div class="about-info">
+            <h2>Tentang Perusahaan</h2>
+            <p>
+                Service Mobil adalah perusahaan yang didirikan dengan tujuan memberikan solusi lengkap untuk perawatan dan perbaikan mobil. Dengan pengalaman bertahun-tahun, kami berkomitmen untuk memberikan pelayanan terbaik kepada pelanggan kami.
+            </p>
+        </div>
+
+        <div class="about-info">
+                <h2> Kewajiban Kami</h2>
+            <p>
+                Menyediakan layanan yang transparan dan jujur kepada pelanggan.
+                Memastikan keamanan dan kenyamanan kendaraan pelanggan. 
+                Mendukung praktik ramah lingkungan dalam setiap aspek pekerjaan kami.
+                 Memberikan harga yang wajar dan jelas kepada pelanggan.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Service Mobil. All rights reserved.
+    </footer>
+</body>
+
+</html>
+
+
+

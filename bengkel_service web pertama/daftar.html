@@ -1,0 +1,113 @@
+<!-- daftar.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-... (integrity)" crossorigin="anonymous" />
+
+    <title>Daftar</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:rgb(255, 255, 255);
+            color: #333;
+            background-image: url('images/daftar.jpg'); 
+            
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.952);
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            
+            
+
+        }
+
+        .registration-form {
+            background-color: rgba(0, 0, 0, 0.418); width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: blue;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .registration-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .registration-form input {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .registration-form button {
+            background-color: #1623d6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pendaftaran Akun</h1>
+    </header>
+
+    <section>
+        <div class="registration-form">
+            <form action="proses_daftar.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Konfirmasi Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Service Mobil. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service mobil rian</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+
+    <video autoplay muted loop id="video-background">
+        <source src="images/Nis.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav>
+        <div class="container-menu">
+            <div class="logo">
+                <div class="logo"><h1><u>BENGKEL SERVICE MOBIL SALAM</u></h1></div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html"><u>Home</u></a></li>
+                    <li><a href="layanan.html"><u>Layanan</u></a></li>
+                    <li><a href="tentang.html"><u>Tentang</u></a></li>
+                    <li><a href="kontak.html"><u>kontak</u></a></li>
+                    <li class="cadastro"><a id="cd" href="daftar.html">Pendaftaran</a></li>
+                </u>
+            </div>
+        </div>
+    </nav>
+
+    <img class="wave" src="">
+
+    <div class="container">
+        <div class="img">
+            
+        </div>
+        <div class="login-content">
+            <form id="loginForm" onsubmit="return loginUser()">
+                <img src="images/st.svg" alt="Logo">
+                <h2 class="title">LOGIN</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Penggunaan</h5>
+                        <input type="text" id="username" class="input" required>
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Kata Sandi</h5>
+                        <input type="password" id="password" class="input" required>
+                    </div>
+                </div>
+                <a href="lupa_kata_sandi.html">Lupa kata sandi?</a>
+                <div class="cadastrar">
+                    <h4>Belum memiliki akun?</h4>
+                    <a class="clique" href="belum_punya_akun.html">Tekan di sini!</a>
+                </div>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function loginUser() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            if (username === "gafar" && password === "010503") {
+                alert("Selamat datang di layanan kami, Login berhasil!");
+                window.location.href = "home.html";
+                return false;
+            } else {
+                alert("Oops! Login gagal. Mohon periksa username dan password Anda.");
+                var loginForm = document.getElementById('loginForm');
+                loginForm.classList.add('error-shake');
+    
+                // Menghapus efek setelah beberapa waktu
+                setTimeout(function () {
+                    loginForm.classList.remove('error-shake');
+                }, 500);
+    
+                return false;
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+

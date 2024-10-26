@@ -1,0 +1,149 @@
+<!-- kontak.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            background-image: url('images/pl.jpg');
+            display: block;
+        }
+
+        header {
+            background-color: rgba(0, 0, 255, 0.075);
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.671);
+            width: 100%;
+            display: flex;
+        }
+
+        .contact-info {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px white;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2 {
+            color: white;
+        }
+
+        .contact-info p {
+            color: white;
+        }
+
+        .contact-form {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.356);
+            margin-bottom: 20px;
+            text-align: left;
+            width: 40%;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.671) (156, 151, 151);
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.589);
+            
+        }
+
+        .contact-form button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+        }
+        .contact-form button:hover {
+            background-color: blue;
+            }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.651);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontak Kami</h1>
+    </header>
+
+    <section id="kontak">
+        <div class="contact-info">
+            <h2>Informasi Kontak</h2>
+            <p>
+                Hubungi kami untuk informasi lebih lanjut atau untuk membuat janji.
+                Tim kami siap membantu Anda.
+            </p>
+            <p>Email: info@servicemobil.com</p>
+            <p>Telepon: +62 123 456 789</p>
+        </div>
+       
+        <div class="contact-form">
+            <h2>Hubungi Kami</h2>
+            <form action="proses_kontak.php" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Service Mobil. 
+        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+    </footer>
+</body>
+</html>
+
